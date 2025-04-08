@@ -1,0 +1,422 @@
+.skip a {
+  position: absolute;
+  left: -9999px; /* Hide from view but accessible for screen readers */
+  top: 0;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 1000; /* Ensure it is above other content when focusing */
+}
+
+.skip a:focus {
+  left: 10px; /* Only visible and moved into viewport on focus */
+}
+
+.navibar {
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ensure full coverage across the viewport width */
+  background-color: #FFCB05; /* Yellow background for the navbar */
+  z-index: 1000; /* Ensures it's above other content */
+  height: 80px; /* Adjust the value as needed for desired navbar height */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+  display: flex; /* Enable flexbox model */
+  align-items: center; /* Vertically centers the content */
+  justify-content: center; /* Horizontally centers the items if needed */
+}
+
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for horizontal layout of list items */
+  height: 100%; /* Ensure the list takes full height of the nav bar */
+}
+
+.nav-list li {
+  display: flex;
+  align-items: center; /* Centers content vertically inside each list item */
+}
+
+.nav-list li a {
+  display: block;
+  color: #00274C;
+  text-align: center;
+  padding: 0 20px; /* Horizontal padding for each nav link */
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.nav-list li a:hover {
+  background-color: #f2f2f2; /* Optional: Add hover effect */
+  color: #00274C;
+}
+
+body {
+  background-color: #00274C;
+  color: white;
+  margin: 0;
+  padding-top: [height_of_navbar]; /* Adjust this to avoid content being hidden behind the navbar */
+  }
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+header, main, footer {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  background-color: #00274C; /* Set the background for the main content */
+}
+
+a:link, nav a {
+  color: #FFCB05;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  text-decoration: underline;
+}
+
+.navibar {
+  position: sticky;
+  top: 0;
+  background-color: #FFCB05;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list li a {
+  display: block;
+  color: #00274C;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+footer a {
+  color: #FFCB05;
+}
+
+.img-container, .resource-image, .tutor-image {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 10px double #FFCB05;
+}
+
+figcaption {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ .resource-description, .tutor-description {
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  border: 10px double #FFCB05;
+}
+
+/* Specific Layouts */
+.content-container, .life-container, .mental-wellbeing-container, .resource-container, .tutor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* Space between each block */
+  padding: 20px;
+}
+
+.text {
+  text-align: left;
+}
+
+.help, .resource-description, .tutor-description {
+  padding: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.text ul {
+  list-style-position: inside; /* Ensures bullets stay with text */
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+
+centered-list {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0 auto; /* Centers the list container */
+  display: table; /* Allows centering child elements */
+  text-align: center; /* Aligns text to center */
+}
+
+.centered-list li {
+  display: table-row; /* Ensures each item is treated as a block of its own */
+  text-align: center; /* Centers text within the list item */
+}
+
+.mental-health-container {
+  display: flex;
+  flex-direction: column; /* Default: stack vertically */
+  align-items: center;
+  gap: 20px;
+}
+
+.mental-health-text,
+.mental-health-image {
+  width: 100%; /* Full width for stacking layout */
+}
+
+.mental-health-image img {
+  width: 100%; /* Image scales with container */
+  height: auto;
+  border: 5px solid #FFCB05; /* Optional styling */
+  border-radius: 8px;
+}
+
+.mental-health article {
+  margin-bottom: 15px; /* Space between articles */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body.not-found {
+  background-color: #00274C; 
+  color: #FFFFFF; 
+  font-family: Arial, sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #00274C; 
+  padding: 40px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #FFCB05;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.home-link {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #00274C; /* Change button text color */
+  background-color: #FFCB05; /* Maize button background */
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #FFD700; /* Slightly lighter maize on hover */
+}
+
+.heuristics {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #FFCB05; /* Optional: maize border */
+  border-radius: 5px;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 900px) {
+  .content-container, .life-container, .resource-container, .tutor-container {
+    flex-direction: row; /* Align horizontally on larger screens */
+    justify-content: center;
+  }
+
+  .mental-wellbeing-container {
+    flex-direction: row-reverse;
+  }
+
+  .alternate-layout {
+    flex-direction: row-reverse; /* Flip text and image for alternating effect */
+  }
+
+  .image, .text, .fun, .centered-content, .resource-image, .resource-description, .tutor-image, .tutor-description {
+    width: 50%;
+  }
+
+  .fun {
+    margin-right: 20px;
+  }
+
+  .text, .resource-description, .tutor-description {
+    text-align: left;
+    padding: 0 20px; /* Add side padding for spacing */
+  }
+
+  .text ul {
+    text-align: left;
+}
+
+.content-container, .life-container, .resource-container, .tutor-container {
+  display: flex;
+  flex-direction: row; /* Aligns elements horizontally */
+  justify-content: center;
+  align-items: center; /* Centers items vertically */
+}
+
+/* Alternate layout for containers */
+.alternate-layout {
+  flex-direction: row-reverse; /* Reverse text and image for alternating effect */
+}
+
+/* Image and text sizing */
+.image, .text, .fun, .centered-content, .resource-image, .resource-description, .tutor-image, .tutor-description {
+  width: 50%;
+}
+
+/* Additional styles for fun section */
+.fun {
+  margin-right: 20px;
+}
+
+/* Text and description styling */
+.text, .resource-description, .tutor-description {
+  text-align: left;
+  padding: 0 20px; /* Add side padding for spacing */
+}
+
+.text ul {
+  text-align: left;
+}
+/* Media Queries for larger screens with widths greater than 900px */
+  /* Flexbox layout for larger screens */
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .image {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  img.pg1image {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .text ul {
+    list-style-position: inside;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .service-intro {
+    margin-top: 20px; /* Add space above the "Some of the services we provide include:" paragraph */
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+img.pg1image {
+    width: 100%;
+    height: auto;
+}
+
+
+.navibar {
+  position: sticky; /* Ensure it stays sticky on mobile */
+  top: 0;
+  background-color: #FFCB05; /* Same background on all screens */
+}
+.nav-list li {
+  margin-bottom: 10px; /* Add space between navbar links */
+}
+
+.mental-health-container {
+  flex-direction: row; /* Align items side-by-side on larger screens */
+  align-items: center; /* Center items vertically */
+}
+
+.centered-content {
+  order: 1; /* Ensure the text comes first */
+  width: 50%; /* Split width for side-by-side layout */
+}
+
+.mental-health-image {
+  order: 2; /* Ensure the image comes second */
+  width: 50%; /* Split width for side-by-side layout */
+}
+}
